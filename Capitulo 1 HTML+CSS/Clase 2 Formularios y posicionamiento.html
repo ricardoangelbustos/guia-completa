@@ -1,0 +1,274 @@
+Ejercicio 1: Un poquito de semántica
+
+<p>
+    <em>Luke? Luke? Luke? Have you seen Luke this morning?</em> <strong>He
+    said he had some things to do before he started today, 
+    so he left early</strong>. Uh? <mark>Did he take those two new droids 
+    with him? I think so. Well, he'd better have those units
+    in the south range repaired be midday or there'll be
+    hell to pay!</mark> Wait, there's something dead ahead on the
+    scanner. It looks like our droid...hit the accelerator.
+</p>
+
+Ejercicio 2: Primer formulario
+
+<form class="" action="resultado.html" method="POST">
+  
+</form>
+
+Ejercicio 3: Agregando un campo al formulario
+
+<form action="resultado.html" method="POST">
+    <label for="nombre">Nombre></label>
+    <input id="nombre" type="text" name="nombre">
+  
+</form>
+
+Ejercicio 4: Más campos al formulario
+
+<form action="resultado.html" method="POST">
+    <label for="nombre">
+      Nombre
+    </label>
+    <input id="nombre" type="text" name="nombre" value="" required>
+    <label for="email">
+      Email
+    </label>
+    <input id="email" type="email" name="email" value="" required>
+    <label for="nombre">
+      Contraseña
+    </label>
+    <input id="pass" type="password" name="pass" value="" required>
+  
+</form>
+
+Ejercicio 5: Submit
+
+<form action="resultado.html" method="POST">
+
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" type="text" name="nombre">
+    <br>
+    <label for="email">E-mail:</label>
+    <input id="email" type="email" name="email">
+    <br>  
+    <label for="contrasenia">Contraseña</label>
+    <input id="contrasenia" type="password" name="contrasenia">
+    <br>
+    <input type="submit" value="Enviar">
+    
+</form>
+
+Ejercicio 6: Radio Button
+
+<form action="resultado.html" method="POST">
+    <label for="mascota">¿Tenés mascota?</label>
+    <br>
+    <input type="radio" name="mascota" value="si">SI
+    <br>
+    <input type="radio" name="mascota" value="no">NO
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+
+Ejercicio 7: Checkbox
+
+<form action="resultado.html" method="POST">
+    <label for="">¿Cuáles son tus hobbies?</label>
+    <br>
+    <input type="checkbox" name="hobby" value="pescar">Pescar
+    <br>
+    <input type="checkbox" name="hobby" value="correr">Correr
+    <br>
+    <input type="checkbox" name="hobby" value="yoga">Yoga
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+
+Ejercicio 8: Desplegables
+
+<form action="resultado.html" method="POST">
+    <label for="mes">Elegí un mes:</label>
+    <br>
+    <select name="mes" id="mes">
+      <option value="enero">
+        Enero
+      </option>
+      <option value="febrero">
+        Febrero
+      </option>
+      <option value="marzo">
+        Marzo
+      </option>
+      <option value="abril">
+        Abril
+      </option>
+      <option value="mayo">
+        Mayo
+      </option>
+      <option value="junio">
+        Junio
+      </option>
+      <option value="julio">
+        Julio
+      </option>
+      <option value="agosto">
+        Agosto
+      </option>
+      <option value="septiembre">
+        Septiembre
+      </option>
+      <option value="octubre">
+        Octubre
+      </option>
+      <option value="noviembre">
+        Noviembre
+      </option>
+      <option value="diciembre">
+        Diciembre
+      </option>
+    </select>
+    
+    <input type="submit" value="Enviar">
+</form>
+
+Ejercicio 9: Textarea y Button
+
+<form action="resultado.html" method="POST">
+    <textarea name="comentario" id="com" cols="80" rows="8">
+    </textarea>
+    <br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+</form>
+
+Ejercicio 10: Elementos de línea
+
+<p>
+    <span>Luke?</span> <a href="www.google.com">Luke?</a> Luke? Have you seen Luke this morning? He
+    said he had some things to do before he started today, 
+    so he left early. Uh? Did he take those two new droids 
+    with him? I think so. Well, he'd better have those units
+    in the south range repaired be midday or there'll be
+    hell to pay! Wait, there's something dead ahead on the
+    scanner. It looks like our droid...hit the accelerator.
+</p>
+
+Ejercicio 11: Elementos de bloque
+
+<span>
+    Luke? Luke? Luke? Have you seen Luke this morning? <div>He
+    said he had some things to do before he started today, 
+    so he left early.</div> Uh? Did he take those two new droids 
+    with him? I think so. Well, he'd better have those units
+    in the south range repaired be midday or there'll be
+    hell to pay! Wait, there's something dead ahead on the
+    scanner. It looks like our droid...hit the accelerator.
+</span>
+
+Ejercicio 12: Modificando comportamientos
+
+div#primero {
+    display:inline;
+}
+   
+div#segundo {
+    display:none;
+}
+   
+span {
+    display:block;
+}
+
+Ejercicio 13: Estructura semántica
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Estructura semántica </title>
+  </head>
+  <body>
+    <header>Soy un header</header>
+    <section>
+      <article>Soy el articulo 1</article>
+      <article>Soy el articulo 2</article>
+    </section>
+    <footer>Soy un footer</footer>
+  </body>
+</html>
+
+Ejercicio 14: Modelando unas cajas
+
+div {
+    width: 100px;
+    border: solid 1px red;
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+Ejercicio 15: Separando cajas
+
+header {
+    background-color: black;
+    color: white;
+    font-size: 28px;
+    border-bottom: solid red 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+section {
+    width: 50%;
+    margin-left: 25%;
+    background-color: gainsboro;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: dashed black 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    border-top: solid red 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+Ejercicio 16: Floats 101
+
+section {
+    overflow: hidden;
+}
+  
+article {
+    float:left;
+}
+
+Ejercicio 17: Floats Intensos
+
+section {
+    overflow: hidden;
+}
+  
+article {
+    float: left;
+    width: 20%;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    box-sizing: border-box;
+}
+
+Ejercicio 18: Fin de clase 2
+
+Fin de archivo
