@@ -104,3 +104,5 @@ $parte2 = "un barco";
 $parte3 = "chiquito";
 
 $resultado= $parte1." ".$parte2." ".$parte3;
+
+Fin de archivo
